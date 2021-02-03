@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A商B法:分析結果</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>分析結果</h1>
+						<p>資料提供於: 經濟部智慧局</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+<!--								<span class="image main"><img src="./static/images/pic04.jpg" alt="" /></span>-->
+
+								<h2 style="font-weight:bold;">所申請商標名: {{logoname}},類別: {{cate_name}}</h2>
+								<h3>⚠注意相似著名商標: <code style="color: red">{{logo_namecheck}}</code></h3>
+								<blockquote>我國在商標法採行註冊保護原則下，特別強化著名商標的保護，以維護市場交易與公平競爭秩序。</blockquote>
+									<div>
+										<h2>文字侵權風險: <code style="color:red;"> {{acc}} </code> </h2>
+									</div>
+									<hr />
+									<h3>文字相似度</h3>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Item</th>
+														<th>Name</th>
+														<th>Score</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>{{name1}}</td>
+														<td>{{score1}}</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>{{name2}}</td>
+														<td>{{score2}}</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>{{name3}}</td>
+														<td>{{score3}}</td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>{{name4}}</td>
+														<td>{{score4}}</td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>{{name5}}</td>
+														<td>{{score5}}</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td></td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+								<hr />
+
+								<h2>圖片相似度</h2>
+									<div>
+										<h2>圖片侵權風險: <code style="color:red;">{{imgacc}}</code></h2>
+									</div>
+									<hr />
+
+									<h3>圖片最相似之 3 張圖片</h3>
+									<div class="row gtr-uniform">
+										<div class="col-4"></div>
+										<div class="col-4"><h3 class="fit">原始上傳圖</h3></div>
+										<div class="col-4"></div>
+									</div>
+									<div class="row gtr-uniform">
+										<div class="col-4"></div>
+										<div class="col-4"><span class="image fit"><img src="{{filepath}}" alt="" /></span></div>
+										<div class="col-4"></div>
+									</div>
+									<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>{{imgname1}}</th>
+														<th>{{imgname2}}</th>
+														<th>{{imgname3}}</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><div class="col-4"><span class="image fit"><img src="{{imgurl1}}" alt="" /></span></div></td>
+														<td><div class="col-4"><span class="image fit"><img src="{{imgurl2}}" alt="" /></span></div></td>
+														<td><div class="col-4"><span class="image fit"><img src="{{imgurl3}}" alt="" /></span></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+								<hr />
+								<div>
+									<form action="/genericpre" method="get" >
+										<input type="submit" value="刷新資料">
+									</form>
+									<form action="/index" method="get">
+										<input type="submit" value="回首頁再查詢一次">
+									</form>
+								</div>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>免責聲明</h2>
+							<li>本網頁平台提供之所有資訊內容均僅供參考，不影響正式商標申請之法律程序。使用者在進行判決預測時，仍需審慎評估，必要時請尋求正式法律相關協助，如依本平台提供之資料申請致生損失，本平台不負擔任何賠償及法律責任。</li>
+							<li>本網頁平台資料來源參考-經濟部智慧財產局及法源法律網LawBank</li>
+							<br>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>CONTACT</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 xx Road &bull; xx, TW 00000; TW</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">ceb101heart@gmail.com</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="./static/assets/js/jquery.min.js"></script>
+			<script src="./static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="./static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="./static/assets/js/browser.min.js"></script>
+			<script src="./static/assets/js/breakpoints.min.js"></script>
+			<script src="./static/assets/js/util.js"></script>
+			<script src="./static/assets/js/main.js"></script>
+
+	</body>
+</html>
